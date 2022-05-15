@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api rest</title>
+    <link href="/index.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/index.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+
+            <h1>WEB API REST</h1>
+            <h3>imagenes de Perritos</h3>
+            <span id="Error"></span>
+
+        <section class="main_seccion_imagen_aleatoria"> <!--SECCION IMAGEN ALEATORIO-->
+
+            <article>
+                <figure class="contenedor__imagen">
+                    <img alt="imagen de Perito1" id="img1">
+                    <span class="contenedor__imagen__favorito" id="heart_favorito1"><i class='bx bxs-heart bx-tada-hover'></i></span>
+                </figure>
+            </article>
+
+            <button type="button" onclick="dogRandom()">Reloade</button>
+
+            <article>
+                <figure class="contenedor__imagen">
+                    <img alt="imagen de Perito2" id="img2">
+                    <span class="contenedor__imagen__favorito" id="heart_favorito2"><i class='bx bxs-heart bx-tada-hover'></i></span>
+                </figure>
+            </article>
+
+        </section>
+
+        <section class="uploadingPerro">  <!--SECCION SUBIR UNA FOTO DE PERRO-->
+
+            <h2>Sube la foto de tu perro</h2>
+            <form id="uploadingForm">
+                <input id="file" type="file" name="file" />
+                <button type="button" onclick="uploadPerro()">Subir foto de perro</button>
+            </form>
+        </section>
+
+        <section class="main_seccion_imagen_favorito"> <!--SECCION VISUALIZAR FAVORITOS-->
+
+            <h2>Perros favoritos</h2>
+            <button onclick="dogFavorities()">Visualizar perro favoritos</button>
+            <div class="main_seccion_imagen_favorito_contenedor">
+                
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
